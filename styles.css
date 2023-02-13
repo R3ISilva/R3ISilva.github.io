@@ -1,0 +1,204 @@
+/*region general*/
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: clip;
+}
+
+body {
+    background-color: black;
+}
+
+#animation-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+}
+/*endregion*/
+
+/*region container*/
+.container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    display: block;
+
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circle-hover {
+    scale: 1.0;
+    transition: scale 0.2s linear;
+}
+
+.circle-hover:hover {
+    scale: 1.2;
+}
+
+.normal > .circle {
+    height: 50px;
+    width: 50px;
+}
+
+.small > .circle {
+    height: 17px;
+    width: 17px;
+}
+
+.circle-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+
+    display: inline-block;
+}
+
+.normal > .circle-text {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.small > .circle-text {
+    font-size: 10px;
+    margin-top: 10px;
+}
+/*endregion*/
+
+/*region container coordinates*/
+#family {
+    top: 28%;
+    left: 10%;
+}
+
+#work {
+    top: 20%;
+    left: 40%;
+}
+
+#productivity {
+    top: 28%;
+    left: 55%;
+}
+
+#home {
+    top: 50%;
+    left: 20%;
+}
+
+#zone {
+    top: 50%;
+    left: 50%;
+}
+
+#food {
+    top: 70%;
+    left: 25%;
+}
+
+#studio {
+    top: 25%;
+    left: 80%;
+}
+
+#bar {
+    top: 80%;
+    left: 40%;
+}
+
+#friends {
+    top: 75%;
+    left: 68%;
+}
+
+#favorite_spot {
+    top: 70%;
+    left: 85%;
+    width: 100px;
+    height: auto;
+}
+/*endregion*/
+
+/*region line*/
+line {
+    stroke-width: 10px;
+    stroke: rgb(65, 65, 65);
+    opacity: 0;
+}
+
+.dashed {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+.dashed-mask {
+    stroke: black;
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 10;
+    opacity: 1;
+}
+/*endregion*/
+
+/*region user*/
+.nome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    opacity: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 100px;
+    right: 5%;
+    width: 10%;
+    height: auto;
+    max-height: 230px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 100px;
+    left: 5%;
+    width: 10%;
+    height: auto;
+    max-height: 230px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/*endregion*/
